@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/leftnav.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <link rel="stylesheet" href="./css/enroll-theme.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="./js/cards.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <h4 class="text-center">Enroll Components</h4>
+    
+    <h5>Navbar</h5>
+    <div class="bd-example">
+      
+      <nav class="navbar justify-content-between">
+        <a class="navbar-brand pr-2 pt-3" href="#">
+          <img src="./images/logo.svg" class="align-middle" width="160" height="40" alt="DC Health Exchange Logo">
+        </a>
+        <div class="row">
+          <div class="contact-us pr-2 pt-2">
+            <span>Call Customer Service</span><br />
+            <p class="text-center"><i class="fas fa-phone" data-fa-transform="rotate-90"></i> 1-855-532-5465</p>
+          </div>
+          <div class="portal-links pl-2 pt-2 pr-2">
+            <span>Help</span> | <span>Logout</span><br />
+            <p class="text-center"> Username </p>
+          </div>
+        </div>
+      </nav>
+    
+    </div>
+    
+    <div class="highlight">
+      <strong>
+        <pre>
+          <code class="language-html" data-lang="html">
+            &lt;nav class="navbar justify-content-between"&gt;
+              &lt;a class="navbar-brand pr-2 pt-3" href="#"&gt;
+                &lt;img src="./images/logo.svg" class="align-middle" width="160" height="40" alt="DC Health Exchange Logo"&gt;
+              &lt;/a&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="contact-us pr-2 pt-2"&gt;
+                  &lt;span&gt;Call Customer Service&lt;/span&gt;&lt;br /&gt;
+                  &lt;p class="text-center"&gt;&lt;i class="fas fa-phone" data-fa-transform="rotate-90"&gt;&lt;/i&gt; 1-855-532-5465&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="portal-links pl-2 pt-2"&gt;
+                  &lt;span&gt;Help&lt;/span&gt; | &lt;span&gt;Logout&lt;/span&gt;&lt;br /&gt;
+                  &lt;p class="text-center"&gt; Username &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+          </code>
+        </pre>
+      </strong>
+  </div>
+  
+  <h5>Left Nav</h5>
+  
+  <div class="bd-example">
+    
+    <div id="left-nav" class="col-md-2 p-0">
+      <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">My DC Health Link</a>
+        <a href="#" class="list-group-item list-group-item-action">Employees</a>
+        <a href="#" class="list-group-item list-group-item-action">Benefits</a>
+        <a href="#" class="list-group-item list-group-item-action">Brokers</a>
+        <a href="#" class="list-group-item list-group-item-action">Documents</a>
+        <a href="#" class="list-group-item list-group-item-action">Billing</a>
+      </ul>
+      
+      <div class="card mt-2" id="my-account">
+        <div class="card-body">
+          <h6 class="card-title text-center">My Info</h6>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div id="left-nav" class="col-md-2 p-0"&gt;
+            &lt;ul class="list-group"&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action active"&gt;My DC Health Link&lt;/a&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action"&gt;Employees&lt;/a&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action"&gt;Benefits&lt;/a&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action"&gt;Brokers&lt;/a&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action"&gt;Documents&lt;/a&gt;
+              &lt;a href="#" class="list-group-item list-group-item-action"&gt;Billing&lt;/a&gt;
+            &lt;/ul&gt;
+ 
+            &lt;div class="card mt-2" id="my-account"&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h6 class="card-title text-center"&gt;My Info&lt;/h6&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  <h5>Buttons</h5>
+  
+  <div class="bd-example">
+    <button type="button" class="btn btn-outline-primary" role="button">Primary</button>
+    <button type="button" class="btn btn-primary" role="button">Primary</button>
+    <button type="button" class="btn btn-outline-primary" role="button" disabled>Disabled</button>
+    <button type="button" class="btn btn-primary" role="button" disabled>Disabled</button>
+    
+    <h6 class="pt-3">Sizes</h6>
+    
+    <button type="button" class="btn btn-lg btn-outline-primary" role="button">Large</button>
+    <button type="button" class="btn btn-lg btn-primary" role="button">Large</button>
+    <button type="button" class="btn btn-sm btn-outline-primary" role="button">Small</button>
+    <button type="button" class="btn btn-sm btn-primary" role="button">Small</button>
+    
+    <div class="col-md-6 pt-3 pl-0">
+      <button type="button" class="btn btn-lg btn-block btn-primary" role="button">Block Button</button>
+    </div>
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;button type="button" class="btn btn-outline-primary" role="button"&gt;Primary&lt;/button&gt;
+          &lt;button type="button" class="btn btn-primary" role="button"&gt;Primary&lt;/button&gt;
+          &lt;button type="button" class="btn btn-outline-primary" role="button" disabled&gt;Disabled&lt;/button&gt;
+          &lt;button type="button" class="btn btn-primary" role="button" disabled&gt;Disabled&lt;/button&gt;
+         
+          &lt;button type="button" class="btn btn-lg btn-outline-primary" role="button"&gt;Large&lt;/button&gt;
+          &lt;button type="button" class="btn btn-lg btn-primary" role="button"&gt;Large&lt;/button&gt;
+          &lt;button type="button" class="btn btn-sm btn-outline-primary" role="button"&gt;Small&lt;/button&gt;
+          &lt;button type="button" class="btn btn-sm btn-primary" role="button"&gt;Small&lt;/button&gt;
+         
+          &lt;button type="button" class="btn btn-lg btn-block btn-primary" role="button"&gt;Block Button&lt;/button&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  <h5>Cards</h5>
+  
+  <div class="bd-example">
+    
+    <div class="card" id="employee-enrollments-card">
+      <div class="card-header">
+          <h6 class="mb-0">EMPLOYEE ENROLLMENTS AND WAIVERS</h6>
+        </div>
+      <div class="card-body">
+        <div class="progress">
+          <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="row pl-3 pt-3">
+          17 out of 35 have enrolled or waived coverage.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class="card" id="employee-enrollments-card"&gt;
+            &lt;div class="card-header"&gt;
+                &lt;h6 class="mb-0"&gt;EMPLOYEE ENROLLMENTS AND WAIVERS&lt;/h6&gt;
+              &lt;/div&gt;
+            &lt;div class="card-body"&gt;
+              &lt;div class="progress"&gt;
+                &lt;div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row pl-3 pt-3"&gt;
+                17 out of 35 have enrolled or waived coverage.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  <div class="bd-example">
+    
+    <div class="card" id="employee-enrollments-card">
+      <div class="card-header">
+          <h6 class="mb-0">EMPLOYEE ENROLLMENTS AND WAIVERS</h6>
+        </div>
+      <div class="card-body">
+        <div class="progress">
+          <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="row pl-3 pt-3">
+          17 out of 35 have enrolled or waived coverage.
+        </div>
+        <div class="row pl-0 pt-2">
+          <div class="alert alert-warning col-md-12 mb-0" role="alert">
+            <i class="fas fa-flag"></i> <strong>Important:</strong> This is a card with an alert.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class="card" id="employee-enrollments-card"&gt;
+            &lt;div class="card-header"&gt;
+                &lt;h6 class="mb-0"&gt;EMPLOYEE ENROLLMENTS AND WAIVERS&lt;/h6&gt;
+              &lt;/div&gt;
+            &lt;div class="card-body"&gt;
+              &lt;div class="progress"&gt;
+                &lt;div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row pl-3 pt-3"&gt;
+                17 out of 35 have enrolled or waived coverage.
+              &lt;/div&gt;
+              &lt;div class="row pl-0 pt-2"&gt;
+                &lt;div class="alert alert-warning col-md-12 mb-0" role="alert"&gt;
+                  &lt;i class="fas fa-flag"&gt;&lt;/i&gt; &lt;strong&gt;Important:&lt;/strong&gt; This is a card with an alert.
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+   <div class="bd-example">
+     
+     <div class="card" id="plan-year-card">
+       <div class="card-header">
+         <h6 class="mb-0">PLAN YEAR</h6>
+       </div>
+       <div class="card-body">
+         <table class="table table-sm">
+           <caption class="sr-only">Plan Year Table</caption>
+           <tbody>
+             <tr>
+               <th><p class="text-uppercase">Enrollment Period</p></th>
+               <td>From Date - To Date</td>
+               <td><p>Status</td>
+             </tr>
+             <tr>
+               <th>COVERAGE YEAR</th>
+               <td>From Date - To Date</td>
+               <td><p>Active</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+     
+   </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+      <code class="language-html" data-lang="html">
+        &lt;div class="card" id="plan-year-card"&gt;
+           &lt;div class="card-header"&gt;
+             &lt;h6 class="mb-0"&gt;PLAN YEAR&lt;/h6&gt;
+           &lt;/div&gt;
+           &lt;div class="card-body"&gt;
+             &lt;table class="table table-sm"&gt;
+               &lt;tbody&gt;
+                 &lt;tr&gt;
+                   &lt;th&gt;&lt;p class="text-uppercase"&gt;Enrollment Period&lt;/p&gt;&lt;/th&gt;
+                   &lt;td&gt;From Date - To Date&lt;/td&gt;
+                   &lt;td&gt;&lt;p&gt;Status&lt;/td&gt;
+                 &lt;/tr&gt;
+                 &lt;tr&gt;
+                   &lt;th&gt;COVERAGE YEAR&lt;/th&gt;
+                   &lt;td&gt;From Date - To Date&lt;/td&gt;
+                   &lt;td&gt;&lt;p&gt;Active&lt;/td&gt;
+                 &lt;/tr&gt;
+               &lt;/tbody&gt;
+             &lt;/table&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  <div class="bd-example">
+    
+    <div class="card" id="employer-benefit-group-card">
+      <div class="card-header">
+        <h6 class="mb-0">Benefit Group Title</h6>
+      </div>
+      <div class="card-body">
+        <div class="row pl-3">
+          <div class="col-md-3 col-sm-3 pl-0">
+            <p>ELIGIBILITY</p>
+          </div>
+          <div class="col-md-9 col-sm-9 pl-0">
+             <p class="text-right eligibility-text">First of the month following or coinciding with date of hire</p>
+          </div>
+        </div>
+        <div class="row pl-3 pt-3 justify-content-between">
+          <div class="col-md-2 health-title pl-0">
+            <p>Health</p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-right health-details details">View Details <i class="fas fa-chevron-up"></i></p>
+            <p class="text-right health-details details" style="display: none">Hide Details <i class="fas fa-chevron-down"></i></p>
+          </div>
+        </div>
+        <div class="row pl-2">
+          <table class="table table-sm mb-0">
+            <caption class="sr-only">Benefit Group Table</caption>
+            <tbody>
+              <tr>
+                <th scope="row"><p class="font-weight-light mb-0">REFERENCE PLAN</p></th>
+                <th scope="row"><p class="font-weight-light mb-0">CARRIER</p></th>
+                <th scope="row"><p class="font-weight-light mb-0">TYPE</p></th>
+              </tr>
+              <tr>
+                <td><p class="mb-0">Plan Name</p></td>
+                <td><p class="mb-0">Carrier Name</p></td>
+                <td><p class="mb-0">Plan Type</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><p class="font-weight-light mb-0">METAL LEVEL</p></th>
+                <th scope="row"><p class="font-weight-light mb-0">PLANS BY</p></th>
+              </tr>
+              <tr>
+                <td><p class="mb-0">Silver</p></td>
+                <td><p class="mb-0">Plans from Carrier</p></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <div class="collapse additional-health-info ol-md-12 col-sm-12 pl-0" id="collapseExample">
+            <table class="table table-sm additional-info-table">
+              <caption class="sr-only">Additional Health Information Table</caption>
+              <tbody>
+                <tr>
+                  <th scope="row"><p class="mb-0">OFFERED</p></th>
+                  <th scope="row"><p class="mb-0">EMPLOYER HEALTH CONTRIBUTION</p></th>
+                </tr>
+                <tr>
+                  <td><p class="font-weight-light mb-1"><i class="far fa-check-square fa-lg"></i> Employee</p></td>
+                  <td><p class="font-weight-bold mb-1"> 80%</p></td>
+                </tr>
+                <tr>
+                  <td><p class="font-weight-light mb-1"><i class="far fa-check-square fa-lg"></i> Spouse</p></td>
+                  <td><p class="font-weight-bold mb-1"> 40%</p></td>
+                </tr>
+                <tr>
+                  <td><p class="font-weight-light mb-1"><i class="far fa-check-square fa-lg"></i> Domestic partner</p></td>
+                  <td><p class="font-weight-bold mb-1"> 30%</p></td>
+                </tr>
+                <tr>
+                  <td><p class="font-weight-light mb-1"><i class="far fa-check-square fa-lg"></i> Child under 26</p></td>
+                  <td><p class="font-weight-bold mb-1"> 30%</p></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="row pl-3">
+              <div class="col-md-5 col-sm-5 pl-0">
+                <p class="mb-0 font-weight-bold">Employer Estimated Maximum Monthly Cost</p>
+                <p class="er-cost">$6,276.85</p>
+              </div>
+              <div class="col-md-7 col-sm-7 pl-0">
+                <table class="table table-sm">
+                  <tbody>
+                    <tr>
+                      <th colspan="2" scope="row"></th>
+                      <th><p class="mb-0">Min</p></th>
+                      <th><p class="mb-0">Max</p></th>
+                    </tr>
+                    <tr>
+                      <td colspan="2" scope="row"><p>Total Estimated Monthly Cost for Plan Participants</p></td>
+                      <td><p>$47.43</p></td>
+                      <td><p>$855.31</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+      <code class="language-html" data-lang="html">
+        &lt;div class="card" id="employer-benefit-group-card"&gt;
+          &lt;div class="card-header"&gt;
+            &lt;h6 class="mb-0"&gt;Benefit Group Title&lt;/h6&gt;
+          &lt;/div&gt;
+          &lt;div class="card-body"&gt;
+            &lt;div class="row pl-3"&gt;
+              &lt;div class="col-md-3 col-sm-3 pl-0"&gt;
+                &lt;p&gt;ELIGIBILITY&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-md-9 col-sm-9 pl-0"&gt;
+                 &lt;p class="text-right eligibility-text"&gt;First of the month following or coinciding with date of hire&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row pl-3 pt-3 justify-content-between"&gt;
+              &lt;div class="col-md-2 health-title pl-0"&gt;
+                &lt;p&gt;Health&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-md-3"&gt;
+                &lt;p class="text-right health-details details"&gt;View Details &lt;i class="fas fa-chevron-up"&gt;&lt;/i&gt;&lt;/p&gt;
+                &lt;p class="text-right health-details details" style="display: none"&gt;Hide Details &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row pl-2"&gt;
+              &lt;table class="table table-sm mb-0"&gt;
+                &lt;caption class="sr-only"&gt;Benefit Group Table&lt;/caption&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;&lt;p class="font-weight-light mb-0"&gt;REFERENCE PLAN&lt;/p&gt;&lt;/th&gt;
+                    &lt;th scope="row"&gt;&lt;p class="font-weight-light mb-0"&gt;CARRIER&lt;/p&gt;&lt;/th&gt;
+                    &lt;th scope="row"&gt;&lt;p class="font-weight-light mb-0"&gt;TYPE&lt;/p&gt;&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;&lt;p class="mb-0"&gt;Plan Name&lt;/p&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;p class="mb-0"&gt;Carrier Name&lt;/p&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;p class="mb-0"&gt;Plan Type&lt;/p&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;&lt;p class="font-weight-light mb-0"&gt;METAL LEVEL&lt;/p&gt;&lt;/th&gt;
+                    &lt;th scope="row"&gt;&lt;p class="font-weight-light mb-0"&gt;PLANS BY&lt;/p&gt;&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;&lt;p class="mb-0"&gt;Silver&lt;/p&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;p class="mb-0"&gt;Plans from Carrier&lt;/p&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+              &lt;/table&gt;
+              
+              &lt;div class="collapse additional-health-info ol-md-12 col-sm-12 pl-0" id="collapseExample"&gt;
+                &lt;table class="table table-sm additional-info-table"&gt;
+                  &lt;caption class="sr-only"&gt;Additional Health Information Table&lt;/caption&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;&lt;p class="mb-0"&gt;OFFERED&lt;/p&gt;&lt;/th&gt;
+                      &lt;th scope="row"&gt;&lt;p class="mb-0"&gt;EMPLOYER HEALTH CONTRIBUTION&lt;/p&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;&lt;p class="font-weight-light mb-1"&gt;&lt;i class="far fa-check-square fa-lg"&gt;&lt;/i&gt; Employee&lt;/p&gt;&lt;/td&gt;
+                      &lt;td&gt;&lt;p class="font-weight-bold mb-1"&gt; 80%&lt;/p&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;&lt;p class="font-weight-light mb-1"&gt;&lt;i class="far fa-check-square fa-lg"&gt;&lt;/i&gt; Spouse&lt;/p&gt;&lt;/td&gt;
+                      &lt;td&gt;&lt;p class="font-weight-bold mb-1"&gt; 40%&lt;/p&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;&lt;p class="font-weight-light mb-1"&gt;&lt;i class="far fa-check-square fa-lg"&gt;&lt;/i&gt; Domestic partner&lt;/p&gt;&lt;/td&gt;
+                      &lt;td&gt;&lt;p class="font-weight-bold mb-1"&gt; 30%&lt;/p&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;&lt;p class="font-weight-light mb-1"&gt;&lt;i class="far fa-check-square fa-lg"&gt;&lt;/i&gt; Child under 26&lt;/p&gt;&lt;/td&gt;
+                      &lt;td&gt;&lt;p class="font-weight-bold mb-1"&gt; 30%&lt;/p&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+                
+                &lt;div class="row pl-3"&gt;
+                  &lt;div class="col-md-5 col-sm-5 pl-0"&gt;
+                    &lt;p class="mb-0 font-weight-bold"&gt;Employer Estimated Maximum Monthly Cost&lt;/p&gt;
+                    &lt;p class="er-cost"&gt;$6,276.85&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="col-md-7 col-sm-7 pl-0"&gt;
+                    &lt;table class="table table-sm"&gt;
+                      &lt;tbody&gt;
+                        &lt;tr&gt;
+                          &lt;th colspan="2" scope="row"&gt;&lt;/th&gt;
+                          &lt;th&gt;&lt;p class="mb-0"&gt;Min&lt;/p&gt;&lt;/th&gt;
+                          &lt;th&gt;&lt;p class="mb-0"&gt;Max&lt;/p&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td colspan="2" scope="row"&gt;&lt;p&gt;Total Estimated Monthly Cost for Plan Participants&lt;/p&gt;&lt;/td&gt;
+                          &lt;td&gt;&lt;p&gt;$47.43&lt;/p&gt;&lt;/td&gt;
+                          &lt;td&gt;&lt;p&gt;$855.31&lt;/p&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+
+  
+  <div class="bd-example">
+    
+    <div class="card" id="plan-card">
+      <div class="card-body">
+        <h5 class="card-title plan-card-title"><i class="fas fa-bookmark"></i> Standard Plan</h5>
+        <div class="row pl-3">
+          <div class="col-md-2 col-sm-2 pl-0">
+            <img src="./images/carefirst.jpg" class="plan-card-carrier-img" alt="Carrer Logo">
+          </div>
+          <div class="col-md-7 col-sm-6 pl-0">
+            <h4 class="plan-title mb-0">Plan Title Information</h4>
+            <small>CareFirst</small>
+          </div>
+          <div class="col-md-3 col-sm-3 pl-0">
+            <div class="plan-premium">
+              <p class="font-weight-light mb-0">$200.00</p>
+              <small>/month</small>
+            </div>
+          </div>
+        </div>
+        <div class="row pl-3 mt-3">
+          <table class="table" id="plan-table">
+            <caption class="sr-only">Plan Title Table</caption>
+            <thead>
+              <tr>
+                <th class="pt-2 pb-0">TYPE</th>
+                <th class="pt-2 pb-0">LEVEL</th>
+                <th class="pt-2 pb-0">NETWORK</th>
+                <th class="pt-2 pb-0">DEDUCTIBLE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pt-0">HMO</td>
+                <td class="pt-0"><i class="fas fa-dot-circle"></i> Gold</td>
+                <td class="pt-0">DC-Metro</td>
+                <td class="pt-0">$6,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row pl-3">
+          <div class="col-md-3 col-sm-3">
+            <label class="container">Compare
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-4 col-sm-4 p-0">
+            <div class="text-nowrap">
+              <i class="far fa-file-pdf fa-lg"></i> <a href="#" class="plan-summary-text">Summary of Benefits and Coverage</a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <button class="btn btn-sm btn-outline-primary">Select Plan</button>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <button class="btn btn-sm btn-outline-primary">See Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+          &lt;div class="card" id="plan-card"&gt;
+            &lt;div class="card-body"&gt;
+              &lt;h5 class="card-title plan-card-title"&gt;&lt;i class="fas fa-bookmark"&gt;&lt;/i&gt; Standard Plan&lt;/h5&gt;
+              &lt;div class="row pl-3"&gt;
+                &lt;div class="col-md-2 col-sm-2 pl-0"&gt;
+                  &lt;img src="./images/carefirst.jpg" class="plan-card-carrier-img" alt="Carrer Logo"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-7 col-sm-6 pl-0"&gt;
+                  &lt;h4 class="plan-title mb-0"&gt;Plan Title Information&lt;/h4&gt;
+                  &lt;small&gt;CareFirst&lt;/small&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-3 col-sm-3 pl-0"&gt;
+                  &lt;div class="plan-premium"&gt;
+                    &lt;p class="font-weight-light mb-0"&gt;$200.00&lt;/p&gt;
+                    &lt;small&gt;/month&lt;/small&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row pl-3 mt-3"&gt;
+                &lt;table class="table" id="plan-table"&gt;
+                  &lt;thead&gt;
+                    &lt;tr&gt;
+                      &lt;th class="pt-2 pb-0"&gt;TYPE&lt;/th&gt;
+                      &lt;th class="pt-2 pb-0"&gt;LEVEL&lt;/th&gt;
+                      &lt;th class="pt-2 pb-0"&gt;NETWORK&lt;/th&gt;
+                      &lt;th class="pt-2 pb-0"&gt;DEDUCTIBLE&lt;/th&gt;
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;td class="pt-0"&gt;HMO&lt;/td&gt;
+                      &lt;td class="pt-0"&gt;&lt;i class="fas fa-dot-circle"&gt;&lt;/i&gt; Gold&lt;/td&gt;
+                      &lt;td class="pt-0"&gt;DC-Metro&lt;/td&gt;
+                      &lt;td class="pt-0"&gt;$6,000&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/div&gt;
+              &lt;div class="row pl-3"&gt;
+                &lt;div class="col-md-3 col-sm-3"&gt;
+                  &lt;label class="container"&gt;Compare
+                    &lt;input type="checkbox"&gt;
+                    &lt;span class="checkmark"&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-4 col-sm-4 p-0"&gt;
+                  &lt;div class="text-nowrap"&gt;
+                    &lt;i class="far fa-file-pdf fa-lg"&gt;&lt;/i&gt; &lt;a href="#" class="plan-summary-text"&gt;Summary of Benefits and Coverage&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-2 col-sm-2"&gt;
+                  &lt;button class="btn btn-sm btn-outline-primary"&gt;Select Plan&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-2 col-sm-2"&gt;
+                  &lt;button class="btn btn-sm btn-outline-primary"&gt;See Details&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  <h5>Plan Cost tables</h5>
+  
+  <div class="bd-example">
+    
+    <table class="table table-striped table-sm" id="plan-cost-table">
+      <caption class="sr-only">Plan Selection Table</caption>
+      <thead>
+        <tr scope="row">
+          <th scope="col">Name</th>
+          <th scope="col">Relationship</th>
+          <th scope="col">Age</th>
+          <th scope="col">Premium</th>
+          <th scope="col">Aptc Amount</th>
+          <th scope="col">You Pay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">User One</th>
+          <td>Self</td>
+          <td>44</td>
+          <td>$200.00</td>
+          <td>$0.00</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <th scope="row">User Two</th>
+          <td>Spouse</td>
+          <td>34</td>
+          <td>$200.00</td>
+          <td>$0.00</td>
+          <td></td>
+        </tr>
+        <tr class="table-warning" style="font-weight:bold">
+          <th scope="row"></th>
+          <td></td>
+          <td>You Pay</td>
+          <td>$200.00</td>
+          <td>$0.00</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="5"><p class="text-right font-weight-light">Your Coverage Start Date :</p></th>
+          <td><p class="font-weight-light">02/04/2018</p></td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  
+  <div class="highlight">
+    <strong>
+      <pre>
+        <code class="language-html" data-lang="html">
+             &lt;table class="table table-striped table-sm" id="plan-cost-table"&gt;
+               &lt;caption class="sr-only"&gt;Plan Selection Table&lt;/caption&gt;
+               &lt;thead&gt;
+                 &lt;tr scope="row"&gt;
+                   &lt;th scope="col"&gt;Name&lt;/th&gt;
+                   &lt;th scope="col"&gt;Relationship&lt;/th&gt;
+                   &lt;th scope="col"&gt;Age&lt;/th&gt;
+                   &lt;th scope="col"&gt;Premium&lt;/th&gt;
+                   &lt;th scope="col"&gt;Aptc Amount&lt;/th&gt;
+                   &lt;th scope="col"&gt;You Pay&lt;/th&gt;
+                 &lt;/tr&gt;
+               &lt;/thead&gt;
+               &lt;tbody&gt;
+                 &lt;tr&gt;
+                   &lt;th scope="row"&gt;User One&lt;/th&gt;
+                   &lt;td&gt;Self&lt;/td&gt;
+                   &lt;td&gt;44&lt;/td&gt;
+                   &lt;td&gt;$200.00&lt;/td&gt;
+                   &lt;td&gt;$0.00&lt;/td&gt;
+                   &lt;td&gt;$200.00&lt;/td&gt;
+                 &lt;/tr&gt;
+                 &lt;tr&gt;
+                   &lt;th scope="row"&gt;User Two&lt;/th&gt;
+                   &lt;td&gt;Spouse&lt;/td&gt;
+                   &lt;td&gt;34&lt;/td&gt;
+                   &lt;td&gt;$200.00&lt;/td&gt;
+                   &lt;td&gt;$0.00&lt;/td&gt;
+                   &lt;td&gt;&lt;/td&gt;
+                 &lt;/tr&gt;
+                 &lt;tr class="table-warning" style="font-weight:bold"&gt;
+                   &lt;th scope="row"&gt;&lt;/th&gt;
+                   &lt;td&gt;&lt;/td&gt;
+                   &lt;td&gt;You Pay&lt;/td&gt;
+                   &lt;td&gt;$200.00&lt;/td&gt;
+                   &lt;td&gt;$0.00&lt;/td&gt;
+                   &lt;td&gt;$200.00&lt;/td&gt;
+                 &lt;/tr&gt;
+                 &lt;tr&gt;
+                   &lt;th scope="row" colspan="5"&gt;&lt;p class="text-right font-weight-light"&gt;Your Coverage Start Date :&lt;/p&gt;&lt;/th&gt;
+                   &lt;td&gt;&lt;p class="font-weight-light"&gt;02/04/2018&lt;/p&gt;&lt;/td&gt;
+                 &lt;/tr&gt;
+               &lt;/tbody&gt;
+             &lt;/table&gt;
+        </code>
+      </pre>
+    </strong>
+  </div>
+  
+  
+    
+  </div>
+</body>
+</html>
+
+<style>
+  .bd-example {
+      border-width: .2rem;
+      border: solid #f7f7f9;
+  }
+  .highlight {
+    padding: 1rem;
+    background-color: #f7f7f9;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .highlight pre code {
+      font-size: inherit;
+      color: #212529;
+  }
+  pre code {
+      font-size: inherit;
+      color: inherit;
+      word-break: normal;
+  }
+  code {
+      color: #e83e8c;
+      word-break: break-word;
+  }
+  code, kbd, pre, samp {
+      font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  }
+  code, kbd, pre, samp {
+      font-family: monospace,monospace;
+      font-size: 1em;
+  }
+</style>

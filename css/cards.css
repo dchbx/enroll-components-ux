@@ -1,0 +1,153 @@
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#666;
+    font-weight:600;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border:2px solid #ddd;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#employee-enrollments-card .card-header {
+  background:#fff;
+  color:#69A30D;
+}
+#employer-benefit-group-card .card-header {
+  background:#fff;
+  color:#69A30D;
+}
+#employer-benefit-group-card .details {
+  cursor:pointer;
+  color:#069;
+}
+#employer-benefit-group-card p {
+  font-size:12px;
+}
+#employer-benefit-group-card .health-title {
+  background:#fff;
+  color:#69A30D;
+  text-transform:uppercase;
+  font-weight:600;
+}
+#employer-benefit-group-card .fa-chevron-up {
+  color:#069;
+  cursor:pointer;
+}
+#employer-benefit-group-card .table th {
+  color:#9b9b9b;
+}
+#employer-benefit-group-card .table td {
+  border-top:none;
+}
+#employer-benefit-group-card .fa-check-square {
+  color:#28a745;
+}
+#employer-benefit-group-card .additional-info-table tr {
+  border-bottom:1px solid #9b9b9b;
+}
+#plan-year-card .card-header {
+  background:#fff;
+  color:#69A30D;
+}
+#employer-benefit-group-card .er-cost {
+  font-size: 26px;
+  color:#b7b7b7;
+}
+#plan-year-card .table td, .table th {
+  border-top:none;
+}
+#plan-year-card .table th {
+  color:#9b9b9b;
+}
+.fa-file-pdf {
+  color:#007bc4;
+}
+.fa-question-circle {
+  color:#007bc4;
+}
+.plan-card-carrier-img {
+  width:80px;
+}
+.plan-card-title {
+  color:#008000;
+}
+.plan-title {
+  color:#007bc4;
+}
+.plan-summary-text {
+  font-size:10px;
+}
+#plan-table th, #plan-table td {
+  border: none;
+  font-size: 12px;
+}
+
+#plan-table td {
+  font-weight:600;
+}
+
+#plan-table th {
+  color: #7b7b7b;
+  font-weight: 100;
+}
+span.checkbox-custom-label::after {
+  content:'Compare';
+}
