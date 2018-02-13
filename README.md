@@ -12,6 +12,10 @@ Icons are now provided by the fontawesome library, previous versions of Boostrap
 
 https://fontawesome.com/
 
+## Components
+
+You can view the guide for coding Enroll components at http://acapi.dchbx.org/enroll-components.io/
+
 
 ### License
 
