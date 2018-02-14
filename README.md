@@ -21,7 +21,9 @@ You can view the guide for coding Enroll components at http://acapi.dchbx.org/en
 Useful resources for 508 compliance and Chrome developer tools
 
 [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+
 [Colour Contrast Analyser (CCA)](https://developer.paciellogroup.com/resources/contrastanalyser/)
+
 [MDN accessibility documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 
 [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn) 
