@@ -8,13 +8,23 @@ https://getbootstrap.com/
 
 ## Fontawesome
 
-Icons are now provided by the fontawesome library, previous versions of Boostrap < 4 supported Glyphicons but has since been removed.  Fontawesome v 5.0.6 also provides accessibility features that are automtically built into the icons.
+Icons are now provided by the fontawesome library, previous versions of Bootstrap < 4 supported glyphicons but has since been removed.  Fontawesome v5.0.6 also provides accessibility enhancement features that are automatically built into the icons.
 
 https://fontawesome.com/
 
 ## Components
 
 You can view the guide for coding Enroll components at http://acapi.dchbx.org/enroll-components.io/
+
+## Accessibility Resources
+
+Useful resources for 508 compliance and Chrome developer tools
+
+[Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+[Colour Contrast Analyser (CCA)](https://developer.paciellogroup.com/resources/contrastanalyser/)
+[MDN accessibility documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+
+[ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn) 
 
 
 ### License

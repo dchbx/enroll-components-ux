@@ -118,6 +118,12 @@
 #enrollment-report-card .table td, .table th {
   border-top:none;
 }
+#hbx-enrollment-card .card-header {
+  background:#fff;
+  color:#69A30D;
+  font-weight:600;
+  text-transform:uppercase;
+}
 #plan-year-card .card-header {
   background:#fff;
   color:#69A30D;
@@ -131,6 +137,20 @@
 }
 #plan-year-card .table th {
   color:#9b9b9b;
+}
+#your-broker-card p {
+  font-size:12px;
+}
+#your-broker-card a {
+  font-size:12px;
+}
+#your-broker-card .card-header {
+  background:#fff;
+  color:#007bc4;
+  font-weight:600;
+}
+#your-broker-card .fa-user {
+  color:#007bc4;
 }
 .fa-file-pdf {
   color:#007bc4;
