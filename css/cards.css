@@ -66,6 +66,24 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+#benefit-model-selection .nav-link {
+  background-color: #247dc5;
+  border-bottom: solid 3px #003260;
+  color:#fff;
+  transition: background-color 0.5s ease;
+}
+#benefit-model-selection .nav-link:hover {
+  background-color: #003260;
+}
+#benefit-model-selection p {
+  font-size:14px;
+}
+#benefit-model-selection .fa-circle {
+  color:#bfbfbf;
+}
+#benefit-model-selection .list-inline-item {
+  font-size:12px;
+}
 #employee-enrollments-card .card-header {
   background:#fff;
   color:#69A30D;
