@@ -66,24 +66,87 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-#benefit-model-selection .nav-link {
+#benefit-model-selection-card .nav-link {
   background-color: #247dc5;
   border-bottom: solid 3px #003260;
   color:#fff;
   transition: background-color 0.5s ease;
 }
-#benefit-model-selection .nav-link:hover {
+#benefit-model-selection-card .nav-link:hover {
   background-color: #003260;
 }
-#benefit-model-selection p {
+#benefit-model-selection-card p {
   font-size:14px;
 }
-#benefit-model-selection .fa-circle {
+#benefit-model-selection-card .fa-circle {
   color:#bfbfbf;
 }
-#benefit-model-selection .list-inline-item {
+#benefit-model-selection-card .list-inline-item {
   font-size:12px;
 }
+/* The container */
+#benefit-model-selection-card .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#247dc5;
+    font-weight:600;
+}
+#benefit-model-selection-card .tab-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#fff;
+    font-weight:600;
+}
+/* Hide the browser's default radio button */
+#benefit-model-selection-card .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+#benefit-model-selection-card .tab-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+#benefit-model-selection-card .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+#benefit-model-selection-card .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+#benefit-model-selection-card .tab-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the radio button is checked, add a green background */
+#benefit-model-selection-card .container input:checked ~ .checkmark {
+    background-color: #33cc33;
+}
+#benefit-model-selection-card .tab-label input:checked ~ .checkmark {
+    background-color: #33cc33;
+}
+
 #employee-enrollments-card .card-header {
   background:#fff;
   color:#69A30D;
