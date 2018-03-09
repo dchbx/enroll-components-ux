@@ -29,6 +29,7 @@
             </div>
             
             <div id="submenu" class="list-group fixed-top col-md-2 ml-2">
+              <a class="list-group-item list-group-item-action" href="#layout">Layout</a>
               <a class="list-group-item list-group-item-action" href="#navbar">Navbar</a>
               <a class="list-group-item list-group-item-action" href="#leftnav">Left Nav</a>
               <a class="list-group-item list-group-item-action" href="#buttons">Buttons</a>
@@ -43,6 +44,84 @@
         </div>
       </div>
       <div class="col-md-10">
+        
+         <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="layout">
+           
+           <h4 class="display-4">Containers</h4>
+           
+           <p>
+             Containers are the most basic layout element in Bootstrap and <strong>are required when using our default grid system.</strong> Choose from a responsive, fixed-width container (meaning its <code class="highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="highlighter-rouge">100%</code> wide all the time).<br /><br />
+
+             Enroll uses a 12 column grid system structure so the columns should always total 12.
+           </p>
+           
+           <div class="row">
+               <div class="col-12 container">
+                 <p class="text-center">Main Container</p>
+                 <div class="row">
+                   <div class="col-2 lc">
+                     Left Container (col-2)
+                   </div>
+                   <div class="col-6 mc ml-1 mr-1">
+                     Middle Container (col-7)
+                   </div>
+                   <div class="col-3 rc">
+                     Right Container (col-3)
+                   </div>
+                 </div>
+               </div>
+           </div>
+  
+         </div>
+         
+         <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+           <li class="nav-item">
+             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#col-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#col-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+           </li>
+         </ul>
+         <div class="tab-content" id="myTabContent">
+           <div class="tab-pane fade show active highlight" id="col-html" role="tabpanel" aria-labelledby="home-tab">
+             <strong>
+               <pre>
+                 <code class="language-html" data-lang="html">
+                  &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                      &lt;div class="col-md-2"&gt;
+                        Left Container
+                      &lt;/div&gt;
+                      &lt;div class="col-md-7"&gt;
+                        Middle Container
+                      &lt;/div&gt;
+                      &lt;div class="col-md-3"&gt;
+                        Right Container
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                 </code>
+               </pre>
+             </strong>
+           </div>
+           <div class="tab-pane fade highlight" id="col-ruby" role="tabpanel" aria-labelledby="profile-tab">
+             <strong>
+               <pre>
+                 <code class="language-html" data-lang="html">
+                  .container
+                    .row
+                      .col-md-2
+                        |  Left Container 
+                      .col-md-7
+                        |  Middle Container 
+                      .col-md-3
+                        |  Right Container 
+                 </code>
+               </pre>
+             </strong>
+           </div>
+         </div>
+         
         
           <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="navbar">
   
@@ -2561,6 +2640,30 @@ function swapStyleSheet(sheet){
       border-width: .2rem;
       border: solid #f7f7f9;
   }
+  .lc {
+    min-height:238px;
+    background:#fd7e14;
+    border-radius:1em;
+    color:#fff;
+  }
+  .mc {
+    min-height:238px;
+    background:#6f42c1;
+    border-radius:1em;
+    color:#fff;
+  }
+  .rc {
+    min-height:238px;
+    background:#80bdff;
+    border-radius:1em;
+    color:#fff;
+  }
+  .left-container {
+    background:#000;
+  }
+  .middle-container {
+    background:#000;
+  }
   .highlight {
     padding: 1rem;
     background-color: #f7f7f9;
@@ -2576,6 +2679,7 @@ function swapStyleSheet(sheet){
       word-break: normal;
   }
   code {
+      font-size: 87.5%;
       color: #e83e8c;
       word-break: break-word;
   }
