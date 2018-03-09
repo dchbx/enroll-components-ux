@@ -1829,60 +1829,293 @@
               
             </div>
           </div>
-    
+        </div>
+        
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#bm-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bm-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="bm-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+&lt;div class="card" id="benefit-model-selection-card"&gt;
+  &lt;div class="card-header"&gt;
+    Benefit Model Selection
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;p&gt;Select the type of options you want to offer enrollees.&lt;/p&gt;
+              
+    &lt;ul class="nav nav-tabs nav-justified"&gt;
+      &lt;li class="nav-item mt-2"&gt;
+        &lt;a class="nav-link" role="tab" data-toggle="collapse" data-target="#collapsePlan" aria-expanded="true" aria-controls="collapsePlan"&gt;
+          &lt;label class="tab-label"&gt;ONE PLAN
+            &lt;input type="radio" name="tab-radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item ml-2 mt-2"&gt;
+        &lt;a class="nav-link" role="tab" data-toggle="collapse" data-target="#collapseCarrier" aria-expanded="true" aria-controls="collapseCarrier"&gt;
+          &lt;label class="tab-label pl-2"&gt;ONE CARRIER
+            &lt;input type="radio" name="tab-radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item ml-2 mt-2"&gt;
+        &lt;a class="nav-link" role="tab" data-toggle="collapse" data-target="#collapseLevel" aria-expanded="true" aria-controls="collapseLevel"&gt;
+          &lt;label class="tab-label"&gt;ONE LEVEL
+            &lt;input type="radio" name="tab-radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+              
+    &lt;p class="lead mt-4"&gt;
+      Select your preferred insurance company carrier. Your plan participants will be able to choose any Platinum, Gold, or Silver plan offered by the carrier you select. Your costs will be fixed to a specific plan you’ll choose in a minute.
+    &lt;/p&gt;
+              
+    &lt;div id="collapsePlan" class="collapse" aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Plan Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Plan Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Plan Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Plan Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Plan Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+              
+    &lt;div id="collapseCarrier" class="collapse" aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Carrier Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Carrier Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Carrier Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Carrier Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Carrier Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+              
+    &lt;div id="collapseLevel" class="collapse" aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Level Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Level Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Level Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Level Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4 col-sm-4 plan-details"&gt;
+          &lt;label class="container"&gt;One Level Goes Here
+            &lt;input type="radio" name="radio"&gt;
+            &lt;span class="checkmark"&gt;&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;      
+  &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="bm-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+#benefit-model-selection-card.card
+  .card-header
+    |  Benefit Model Selection 
+  .card-body
+    p
+      | Select the type of options you want to offer enrollees.
+    ul.nav.nav-tabs.nav-justified
+      li.nav-item.mt-2
+        a.nav-link[role="tab" data-toggle="collapse" data-target="#collapsePlan" aria-expanded="true" aria-controls="collapsePlan"]
+          label.tab-label
+            | ONE PLAN 
+            input[type="radio" name="tab-radio"]
+            span.checkmark
+      li.nav-item.ml-2.mt-2
+        a.nav-link[role="tab" data-toggle="collapse" data-target="#collapseCarrier" aria-expanded="true" aria-controls="collapseCarrier"]
+          label.tab-label.pl-2
+            | ONE CARRIER 
+            input[type="radio" name="tab-radio"]
+            span.checkmark
+      li.nav-item.ml-2.mt-2
+        a.nav-link[role="tab" data-toggle="collapse" data-target="#collapseLevel" aria-expanded="true" aria-controls="collapseLevel"]
+          label.tab-label
+            | ONE LEVEL 
+            input[type="radio" name="tab-radio"]
+            span.checkmark
+    p.lead.mt-4
+      |  Select your preferred insurance company carrier. Your plan participants will be able to choose any Platinum, Gold, or Silver plan offered by the carrier you select. Your costs will be fixed to a specific plan you’ll choose in a minute. 
+    #collapsePlan.collapse[aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"]
+      .row
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Plan Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Plan Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Plan Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Plan Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Plan Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+    #collapseCarrier.collapse[aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"]
+      .row
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Carrier Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Carrier Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Carrier Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Carrier Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Carrier Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+    #collapseLevel.collapse[aria-labelledby="headingOne" data-parent="#benefit-model-selection-card"]
+      .row
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Level Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Level Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Level Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Level Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+        .col-md-4.col-sm-4.plan-details
+          label.container
+            | One Level Goes Here 
+            input[type="radio" name="radio"]
+            span.checkmark
+                </code>
+              </pre>
+            </strong>
+          </div>
+        </div>
+        
+        <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="tables">
+          
+          <h4 class="display-4">Tables</h4>
         </div>
   
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                   &lt;table class="table table-striped table-sm" id="plan-cost-table"&gt;
-                     &lt;caption class="sr-only"&gt;Plan Selection Table&lt;/caption&gt;
-                     &lt;thead&gt;
-                       &lt;tr scope="row"&gt;
-                         &lt;th scope="col"&gt;Name&lt;/th&gt;
-                         &lt;th scope="col"&gt;Relationship&lt;/th&gt;
-                         &lt;th scope="col"&gt;Age&lt;/th&gt;
-                         &lt;th scope="col"&gt;Premium&lt;/th&gt;
-                         &lt;th scope="col"&gt;Aptc Amount&lt;/th&gt;
-                         &lt;th scope="col"&gt;You Pay&lt;/th&gt;
-                       &lt;/tr&gt;
-                     &lt;/thead&gt;
-                     &lt;tbody&gt;
-                       &lt;tr&gt;
-                         &lt;th scope="row"&gt;User One&lt;/th&gt;
-                         &lt;td&gt;Self&lt;/td&gt;
-                         &lt;td&gt;44&lt;/td&gt;
-                         &lt;td&gt;$200.00&lt;/td&gt;
-                         &lt;td&gt;$0.00&lt;/td&gt;
-                         &lt;td&gt;$200.00&lt;/td&gt;
-                       &lt;/tr&gt;
-                       &lt;tr&gt;
-                         &lt;th scope="row"&gt;User Two&lt;/th&gt;
-                         &lt;td&gt;Spouse&lt;/td&gt;
-                         &lt;td&gt;34&lt;/td&gt;
-                         &lt;td&gt;$200.00&lt;/td&gt;
-                         &lt;td&gt;$0.00&lt;/td&gt;
-                         &lt;td&gt;&lt;/td&gt;
-                       &lt;/tr&gt;
-                       &lt;tr class="table-warning" style="font-weight:bold"&gt;
-                         &lt;th scope="row"&gt;&lt;/th&gt;
-                         &lt;td&gt;&lt;/td&gt;
-                         &lt;td&gt;You Pay&lt;/td&gt;
-                         &lt;td&gt;$200.00&lt;/td&gt;
-                         &lt;td&gt;$0.00&lt;/td&gt;
-                         &lt;td&gt;$200.00&lt;/td&gt;
-                       &lt;/tr&gt;
-                       &lt;tr&gt;
-                         &lt;th scope="row" colspan="5"&gt;&lt;p class="text-right font-weight-light"&gt;Your Coverage Start Date :&lt;/p&gt;&lt;/th&gt;
-                         &lt;td&gt;&lt;p class="font-weight-light"&gt;02/04/2018&lt;/p&gt;&lt;/td&gt;
-                       &lt;/tr&gt;
-                     &lt;/tbody&gt;
-                   &lt;/table&gt;
-              </code>
-            </pre>
-          </strong>
-        </div>
+      
         
         <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="icons">
           
