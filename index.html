@@ -2330,15 +2330,34 @@
           </div>
 
         </div>
-        
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                &lt;i class="fas fa-user"&gt;&lt;/i&gt;  
-              </code>
-            </pre>
-          </strong>
+                
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#icon-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#icon-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="icon-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;i class="fas fa-user"&gt;&lt;/i&gt;
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="icon-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  i.fas.fa-user
+                </code>
+              </pre>
+            </strong>
+          </div>
         </div>
         
         <h5>Resize Icons</h5>
@@ -2365,14 +2384,34 @@
           
         </div>
         
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                &lt;i class="fas fa-user fa-xx"&gt;&lt;/i&gt;  
-              </code>
-            </pre>
-          </strong>
+        
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#icon2-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#icon2-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="icon2-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;i class="fas fa-user fa-xx"&gt;&lt;/i&gt; 
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="icon2-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  i.fas.fa-user.fa-xx
+                </code>
+              </pre>
+            </strong>
+          </div>
         </div>
         
         <h5>Rotating & Flipping Icons</h5>
@@ -2393,16 +2432,37 @@
           
         </div>
         
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                &lt;i class="fas fa-phone" data-fa-transform="rotate-90"&gt;&lt;/i&gt;
-                &lt;i class="fas fa-phone" data-fa-transform="rotate-180"&gt;&lt;/i&gt;
-                &lt;i class="fas fa-phone" data-fa-transform="rotate-270"&gt;&lt;/i&gt;
-              </code>
-            </pre>
-          </strong>
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#icon-r-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#icon-r-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="icon-r-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;i class="fas fa-phone" data-fa-transform="rotate-90"&gt;&lt;/i&gt;
+                  &lt;i class="fas fa-phone" data-fa-transform="rotate-180"&gt;&lt;/i&gt;
+                  &lt;i class="fas fa-phone" data-fa-transform="rotate-270"&gt;&lt;/i&gt; 
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="icon-r-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  i.fas.fa-phone[data-fa-transform="rotate-90"]
+                  i.fas.fa-phone[data-fa-transform="rotate-180"]
+                  i.fas.fa-phone[data-fa-transform="rotate-270"]
+                </code>
+              </pre>
+            </strong>
+          </div>
         </div>
         
         <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="typography">
@@ -2426,17 +2486,43 @@
             </div>
           </div>
           
-          <div class="highlight">
-            <strong>
-              <pre>
-                <code class="language-html" data-lang="html">
-                  &lt;h1 class="heading"&gt;Normal Heading&lt;/h1&gt;
-                  &lt;h3 class="heading"&gt;Normal Sub Heading&lt;/h3&gt;
-                  &lt;h1 class="font-weight-light heading"&gt;Light Heading&lt;/h1&gt;
-                  &lt;h3 class="font-weight-light heading"&gt;Light Sub Heading&lt;/h3&gt;
-                </code>
-              </pre>
-            </strong>
+          <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#typo-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#typo-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active highlight" id="typo-html" role="tabpanel" aria-labelledby="home-tab">
+              <strong>
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    &lt;h1 class="heading"&gt;Normal Heading&lt;/h1&gt;
+                    &lt;h3 class="heading"&gt;Normal Sub Heading&lt;/h3&gt;
+                    &lt;h1 class="font-weight-light heading"&gt;Light Heading&lt;/h1&gt;
+                    &lt;h3 class="font-weight-light heading"&gt;Light Sub Heading&lt;/h3&gt; 
+                  </code>
+                </pre>
+              </strong>
+            </div>
+            <div class="tab-pane fade highlight" id="typo-ruby" role="tabpanel" aria-labelledby="profile-tab">
+              <strong>
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    h1.heading
+                      | Normal Heading
+                    h3.heading
+                      | Normal Sub Heading
+                    h1.font-weight-light.heading
+                      | Light Heading
+                    h3.font-weight-light.heading
+                      | Light Sub Heading
+                  </code>
+                </pre>
+              </strong>
+            </div>
           </div>
           
           <h3 class="mt-4 mb-3">Lead</h3>
@@ -2445,16 +2531,36 @@
             Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
           </p>
           
-          <div class="highlight">
-            <strong>
-              <pre>
-                <code class="language-html" data-lang="html">
-                  &lt;p class="lead"&gt;
-                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                  &lt;/p&gt;
-                </code>
-              </pre>
-            </strong>
+          <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#lead-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#lead-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active highlight" id="lead-html" role="tabpanel" aria-labelledby="home-tab">
+              <strong>
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    &lt;p class="lead"&gt;
+                      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                    &lt;/p&gt; 
+                  </code>
+                </pre>
+              </strong>
+            </div>
+            <div class="tab-pane fade highlight" id="lead-ruby" role="tabpanel" aria-labelledby="profile-tab">
+              <strong>
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    p.lead
+                      |  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                  </code>
+                </pre>
+              </strong>
+            </div>
           </div>
           
         </div>
@@ -2514,38 +2620,75 @@
           
         </div>
         
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                &lt;!-- Button trigger modal --&gt;
-                &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"&gt;
-                  Launch demo modal
-                &lt;/button&gt;
+        
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#modal-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#modal-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="modal-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;!-- Button trigger modal --&gt;
+                  &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"&gt;
+                    Launch demo modal
+                  &lt;/button&gt;
                 
-                &lt;!-- Modal --&gt;
-                &lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
-                  &lt;div class="modal-dialog" role="document"&gt;
-                    &lt;div class="modal-content"&gt;
-                      &lt;div class="modal-header"&gt;
-                        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
-                        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
-                          &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
-                        &lt;/button&gt;
-                      &lt;/div&gt;
-                      &lt;div class="modal-body"&gt;
-                        ...
-                      &lt;/div&gt;
-                      &lt;div class="modal-footer"&gt;
-                        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
-                        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+                  &lt;!-- Modal --&gt;
+                  &lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                    &lt;div class="modal-dialog" role="document"&gt;
+                      &lt;div class="modal-content"&gt;
+                        &lt;div class="modal-header"&gt;
+                          &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
+                          &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                            &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="modal-body"&gt;
+                          ...
+                        &lt;/div&gt;
+                        &lt;div class="modal-footer"&gt;
+                          &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+                          &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+                        &lt;/div&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
                   &lt;/div&gt;
-                &lt;/div&gt;
-              </code>
-            </pre>
-          </strong>
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="modal-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  button.btn.btn-primary[type="button" data-toggle="modal" data-target="#exampleModal"]
+                    |  Launch demo modal 
+                  #exampleModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"]
+                    .modal-dialog[role="document"]
+                      .modal-content
+                        .modal-header
+                          h5#exampleModalLabel.modal-title
+                            | Modal title
+                          button.close[type="button" data-dismiss="modal" aria-label="Close"]
+                            span[aria-hidden="true"]
+                              | ×
+                        .modal-body
+                          |  ... 
+                        .modal-footer
+                          button.btn.btn-secondary[type="button" data-dismiss="modal"]
+                            | Close
+                          button.btn.btn-primary[type="button"]
+                            | Save changes
+                </code>
+              </pre>
+            </strong>
+          </div>
         </div>
         
         <div class="bd-example" data-spy="scroll" data-target="#submenu" data-offset="0" id="alerts">
@@ -2601,19 +2744,42 @@
           </div>
         </div>
         
-        <div class="highlight">
-          <strong>
-            <pre>
-              <code class="language-html" data-lang="html">
-                &lt;div class="alert alert-primary" role="alert"&gt;
-                  This is a primary alert!
-                  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
-                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
-                  &lt;/button&gt;
-                &lt;/div&gt;
-              </code>
-            </pre>
-          </strong>
+        <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#alert-html" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#alert-ruby" role="tab" aria-controls="profile" aria-selected="false">Ruby/Slim syntax</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active highlight" id="alert-html" role="tabpanel" aria-labelledby="home-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  &lt;div class="alert alert-primary" role="alert"&gt;
+                    This is a primary alert!
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                      &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </strong>
+          </div>
+          <div class="tab-pane fade highlight" id="alert-ruby" role="tabpanel" aria-labelledby="profile-tab">
+            <strong>
+              <pre>
+                <code class="language-html" data-lang="html">
+                  .alert.alert-primary[role="alert"]
+                    |  This is a primary alert! 
+                    button.close[type="button" data-dismiss="alert" aria-label="Close"]
+                      span[aria-hidden="true"]
+                        | ×
+                </code>
+              </pre>
+            </strong>
+          </div>
         </div>
   
         
